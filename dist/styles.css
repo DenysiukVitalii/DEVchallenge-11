@@ -772,6 +772,7 @@ header {
       background-color: #827B7B; }
 
 #home {
+  position: relative;
   display: block;
   background-image: url(img/home-bg.jpg);
   width: 100%;
@@ -779,5 +780,121 @@ header {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
+  #home .welcome {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    #home .welcome .stars {
+      margin: 0 auto;
+      height: 15px;
+      width: 90px;
+      background-image: url(img/stars.png);
+      background-position: center center;
+      background-size: cover;
+      margin-bottom: 35px; }
+    #home .welcome span {
+      display: block;
+      font-family: Georgia; }
+      #home .welcome span:before {
+        display: inline-block;
+        content: '';
+        width: 100px;
+        height: 6px;
+        margin-right: 80px;
+        background-image: url(img/arrow-gold-left.png);
+        background-position: center center;
+        background-size: cover; }
+        @media only screen and (max-width: 768px) {
+          #home .welcome span:before {
+            display: none; } }
+      #home .welcome span:after {
+        display: inline-block;
+        content: '';
+        width: 100px;
+        height: 6px;
+        margin-left: 80px;
+        background-image: url(img/arrow-gold-right.png);
+        background-position: center center;
+        background-size: cover; }
+        @media only screen and (max-width: 768px) {
+          #home .welcome span:after {
+            display: none; } }
+    #home .welcome h1 {
+      font-family: Georgia;
+      font-weight: bold;
+      display: block;
+      text-transform: uppercase;
+      width: 100%;
+      font-size: 42px; }
+      #home .welcome h1 b {
+        color: #EAB96A; }
+      @media only screen and (max-width: 768px) {
+        #home .welcome h1 {
+          margin: 10px 0px; } }
+    #home .welcome p {
+      font-family: Georgia;
+      margin: 0; }
+      @media only screen and (max-width: 768px) {
+        #home .welcome p {
+          padding: 0 10px; } }
+    #home .welcome .arrows {
+      margin: 0 auto;
+      margin-top: 35px;
+      background-image: url(img/arrows-gold.png);
+      background-position: center center;
+      background-size: cover;
+      width: 140px;
+      height: 6px;
+      margin-bottom: 60px; }
+    #home .welcome .btn-down {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      margin: 0 auto; }
+      #home .welcome .btn-down .arrow-down {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        border-right: 3px solid #EAB96A;
+        border-bottom: 3px solid #EAB96A;
+        -webkit-transform: translate(-50%, -50%) rotate(45deg);
+        -moz-transform: translate(-50%, -50%) rotate(45deg);
+        -ms-transform: translate(-50%, -50%) rotate(45deg);
+        transform: translate(-50%, -50%) rotate(45deg); }
+  #home .granola {
+    position: absolute;
+    bottom: -3%;
+    right: 5%;
+    width: 236px;
+    height: 247px;
+    z-index: 10;
+    background-image: url(img/granola1.png);
+    background-position: center center;
+    background-size: cover; }
+    @media only screen and (max-width: 768px) {
+      #home .granola {
+        width: 118px;
+        height: 123px; } }
+  #home .home-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    background-image: url(img/border1.png);
+    background-position: center center;
+    background-size: cover; }
 
 /*# sourceMappingURL=styles.css.map*/

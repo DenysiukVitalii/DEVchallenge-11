@@ -1,4 +1,5 @@
 #home {
+  position: relative;
   display: block;
   background-image: url(../img/home-bg.jpg);
   width: 100%;
@@ -6,4 +7,128 @@
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  .welcome {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    @include center();
+    .stars {
+      margin: 0 auto;
+      height: 15px;
+      width: 90px;
+      background-image: url(../img/icons/stars.png);
+      background-position: center center;
+      background-size: cover;
+      margin-bottom: 35px;
+    }
+    span {
+      display: block;
+      font-family: Georgia;
+      &:before {
+        @include media(mobile) {
+          display: none;
+        };
+        display: inline-block;
+        content: '';
+        width: 100px;
+        height: 6px;
+        margin-right: 80px;
+        background-image: url(../img/icons/arrow-gold-left.png);
+        background-position: center center;
+        background-size: cover;
+      }
+      &:after {
+        @include media(mobile) {
+          display: none;
+        };
+        display: inline-block;
+        content: '';
+        width: 100px;
+        height: 6px;
+        margin-left: 80px;
+        background-image: url(../img/icons/arrow-gold-right.png);
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+    h1 {
+      font-family: Georgia;
+      font-weight: bold;
+      display: block;
+      text-transform: uppercase;
+      width: 100%;
+      font-size: 42px;
+      b {
+        color: $gold;
+      }
+      @include media(mobile) {
+        margin: 10px 0px;
+      };
+    }
+    p {
+        font-family: Georgia;
+        margin: 0;
+        @include media(mobile) {
+          padding: 0 10px;
+        };
+    }
+    .arrows {
+      margin: 0 auto;
+      margin-top: 35px;
+      background-image: url(../img/icons/arrows-gold.png);
+      background-position: center center;
+      background-size: cover;
+      width: 140px;
+      height: 6px;
+      margin-bottom: 60px;
+    }
+    .btn-down {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      @include border(b, 1px, #fff);
+      border-radius: 50%;
+      margin: 0 auto;
+      .arrow-down {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        @include border(br, 3px, $gold);
+        @include border(bb, 3px, $gold);
+        -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      	-moz-transform: translate(-50%, -50%) rotate(45deg);
+      	-ms-transform: translate(-50%, -50%) rotate(45deg);
+      	transform: translate(-50%, -50%) rotate(45deg);
+      }
+    }
+  }
+
+  .granola {
+    position: absolute;
+    bottom: -3%;
+    right: 5%;
+    width: 236px;
+    height: 247px;
+    z-index: 10;
+    background-image: url(../img/granols/granola1.png);
+    background-position: center center;
+    background-size: cover;
+    @include media(mobile) {
+      width: 118px;
+      height: 123px;
+    };
+  }
+  .home-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    background-image: url(../img/border1.png);
+    background-position: center center;
+    background-size: cover;
+  }
+
 }
