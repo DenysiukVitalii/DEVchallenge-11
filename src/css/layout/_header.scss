@@ -1,0 +1,95 @@
+header {
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  @include border(bb, 1px, #aaa)
+  transition: 0.5s;
+  width: 100%;
+  z-index: 100;
+  @include media(mobile) {
+    height: 50px;
+  }
+}
+
+#menu {
+  @include media(nomobile) {
+    float: right;
+  }
+}
+
+#icon-menu {
+  @include media(nomobile) {
+    display: none;
+  }
+  margin: 0;
+  padding: 0;
+  @include centerVertical();
+  right: 5%;
+}
+
+.show-menu {
+  left: 0% !important;
+}
+
+#logo {
+   float: left;
+   @include centerVertical();
+}
+#menu-list {
+   margin: 0;
+   padding: 0;
+   float: right;
+   @include media(mobile) {
+      text-align: center;
+      display: block;
+      position: absolute;
+      width: 100%;
+      left: 100%;
+      top: 100%;
+      transition: 0.4s;
+   }
+
+   li {
+     list-style: none;
+     @include media(nomobile) {
+       height: 100px;
+       &:first-child {
+         a {
+           @include border(bb, 2px, $gold);
+           color: $gold;
+         }
+       }
+     }
+     a {
+         @include link(#000, $gold, 16px, uppercase);
+         display: block;
+         height: 100%;
+         padding: 0 20px;
+         @include media(mobmed) {
+           padding: 0 10px;
+         }
+         @include media(nomobile) {
+           &:focus{
+              @include border(bb, 2px, $gold);
+              color: $gold;
+           }
+         }
+         @include media(mobile) {
+          padding: 10px 150px;
+          color: $gold;
+         }
+         @include media(nomobile) {
+           line-height: 6.2;
+         }
+       }
+     @media screen and (min-width: 768px) {
+       display: inline-block;
+       float: left;
+     }
+     @media screen and (max-width: 768px) {
+        padding: 10px 0;
+        border-bottom: 1px solid #fff;
+        background-color: $black;
+     }
+   }
+ }
