@@ -641,6 +641,7 @@ header {
   header .logo {
     background-color: #000; }
   header #logo {
+    width: 12%;
     display: block;
     position: absolute;
     top: 50%;
@@ -762,25 +763,13 @@ header {
       left: 0;
       background-color: #827B7B; }
     header .lines .line-2 {
-      width: 230px;
+      width: 21%;
       left: 3%;
       background-color: transparent; }
     header .lines .line-3 {
-      width: calc(100% - 3% - 230px);
-      left: 24%;
+      width: 81%;
+      left: 19%;
       background-color: #827B7B; }
-      @media only screen and (min-width: 769px) and (max-width: 1199px) {
-        header .lines .line-3 {
-          width: 72%;
-          left: 32%; } }
-      @media only screen and (min-width: 768px) and (max-width: 992px) {
-        header .lines .line-3 {
-          width: 67%;
-          left: 33%; } }
-      @media screen and (min-width: 1800px) and (max-width: 1900px) {
-        header .lines .line-3 {
-          width: 76%;
-          left: 24%; } }
 
 #home {
   display: block;
