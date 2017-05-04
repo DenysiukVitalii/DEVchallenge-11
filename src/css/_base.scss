@@ -6,3 +6,20 @@ body {
   padding: 0;
   background-image: url(../img/bg.jpg);
 }
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
