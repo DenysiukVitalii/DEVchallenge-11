@@ -48,6 +48,7 @@ header {
     background-color: #000;
   }
   #logo {
+     width: 12%;
      @include centerVertical();
      top: 100%;
      left: 5%;
@@ -160,25 +161,13 @@ header {
       background-color: #827B7B;
     }
     .line-2 {
-      width: 230px;
+      width: 21%;
       left: 3%;
       background-color: transparent;
     }
     .line-3 {
-      @include media(medium) {
-        width: 72%;
-        left: 32%;
-      }
-      @include media(mobmed) {
-        width: 67%;
-        left: 33%;
-      }
-      @media screen and (min-width: 1800px) and (max-width: 1900px) {
-        width: 76%;
-        left: 24%;
-      }
-      width: calc(100% - 3% - 230px);
-      left: 24%;
+      width: 81%;
+      left: 19%;
       background-color: #827B7B;
     }
   }
