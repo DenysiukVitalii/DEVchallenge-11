@@ -593,100 +593,202 @@ header {
   position: fixed;
   top: 0;
   background-color: transparent;
-  border-bottom: 1px solid #aaa;
   transition: 0.5s;
   width: 100%;
   z-index: 100; }
   @media only screen and (max-width: 768px) {
     header {
-      height: 50px; } }
-
-@media only screen and (min-width: 768px) {
-  #menu {
-    float: right; } }
-
-#icon-menu {
-  margin: 0;
-  padding: 0;
-  display: block;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  right: 5%; }
+      height: 100px;
+      border-bottom: 1px solid #827B7B; } }
+  header .phone-number {
+    font-family: RobotoBold;
+    color: #fff;
+    font-size: 25px;
+    right: 3%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    top: 47%; }
+    @media only screen and (min-width: 769px) and (max-width: 1199px) {
+      header .phone-number {
+        display: none; } }
+    @media only screen and (max-width: 768px) {
+      header .phone-number {
+        display: none; } }
   @media only screen and (min-width: 768px) {
-    #icon-menu {
-      display: none; } }
-
-.show-menu {
-  left: 0% !important; }
-
-#logo {
-  float: left;
-  display: block;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%); }
-
-#menu-list {
-  margin: 0;
-  padding: 0;
-  float: right; }
-  @media only screen and (max-width: 768px) {
-    #menu-list {
-      text-align: center;
-      display: block;
-      position: absolute;
-      width: 100%;
-      left: 100%;
-      top: 100%;
-      transition: 0.4s; } }
-  #menu-list li {
-    list-style: none; }
+    header #menu {
+      float: right; } }
+  header #icon-menu {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    right: 5%; }
     @media only screen and (min-width: 768px) {
-      #menu-list li {
-        height: 100px; }
-        #menu-list li:first-child a {
-          border-bottom: 2px solid #EAB96A;
-          color: #EAB96A; } }
-    #menu-list li a {
-      color: #000;
-      font-size: 16px;
-      text-transform: uppercase;
-      cursor: pointer;
-      text-decoration: none;
-      display: block;
-      height: 100%;
-      padding: 0 20px; }
-      #menu-list li a:hover {
-        color: #EAB96A !important; }
-      @media only screen and (min-width: 768px) and (max-width: 992px) {
-        #menu-list li a {
-          padding: 0 10px; } }
+      header #icon-menu {
+        display: none; } }
+  header .show-menu {
+    left: 0% !important; }
+  header .logo {
+    background-color: #000; }
+  header #logo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    top: 100%;
+    left: 5%; }
+    @media only screen and (max-width: 768px) {
+      header #logo {
+        top: 50%;
+        width: 115px;
+        height: 75px; } }
+  header #menu-list {
+    margin: 0;
+    padding: 0;
+    float: right; }
+    @media only screen and (min-width: 1200px) {
+      header #menu-list {
+        -webkit-transform: translate(-60%, 0);
+        -moz-transform: translate(-60%, 0);
+        -ms-transform: translate(-60%, 0);
+        transform: translate(-60%, 0); } }
+    @media only screen and (min-width: 769px) and (max-width: 1199px) {
+      header #menu-list {
+        -webkit-transform: translate(-5%, 0);
+        -moz-transform: translate(-5%, 0);
+        -ms-transform: translate(-5%, 0);
+        transform: translate(-5%, 0); } }
+    @media only screen and (max-width: 768px) {
+      header #menu-list {
+        text-align: center;
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 100%;
+        top: 100%;
+        transition: 0.4s; } }
+    header #menu-list li {
+      list-style: none;
+      position: relative; }
       @media only screen and (min-width: 768px) {
-        #menu-list li a:focus {
-          border-bottom: 2px solid #EAB96A;
-          color: #EAB96A; } }
+        header #menu-list li {
+          height: 100px;
+          margin: 0 5px;
+          display: inline-block;
+          float: left; }
+          header #menu-list li:first-child a {
+            border-bottom: 4px solid #EAB96A;
+            color: #EAB96A; }
+          header #menu-list li:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            right: -10%;
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #fff; }
+          header #menu-list li:last-child:after {
+            content: '';
+            display: none; } }
+      header #menu-list li a {
+        color: #000;
+        font-size: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+        height: 100%;
+        padding: 0 20px;
+        color: #fff; }
+        header #menu-list li a:hover {
+          color: #EAB96A !important; }
+        @media only screen and (min-width: 768px) and (max-width: 992px) {
+          header #menu-list li a {
+            padding: 0 10px; } }
+        @media only screen and (min-width: 768px) {
+          header #menu-list li a:focus {
+            border-bottom: 2px solid #EAB96A;
+            color: #EAB96A; } }
+        @media only screen and (max-width: 768px) {
+          header #menu-list li a {
+            padding: 10px 150px;
+            color: #EAB96A; } }
+        @media only screen and (min-width: 768px) {
+          header #menu-list li a {
+            line-height: 6.2; } }
       @media only screen and (max-width: 768px) {
-        #menu-list li a {
-          padding: 10px 150px;
-          color: #EAB96A; } }
-      @media only screen and (min-width: 768px) {
-        #menu-list li a {
-          line-height: 6.2; } }
-    @media screen and (min-width: 768px) {
-      #menu-list li {
-        display: inline-block;
-        float: left; } }
-    @media screen and (max-width: 768px) {
-      #menu-list li {
-        padding: 10px 0;
-        border-bottom: 1px solid #fff;
-        background-color: #131316; } }
+        header #menu-list li {
+          padding: 10px 0;
+          border-bottom: 1px solid #fff;
+          background-color: #131316; } }
+  header .lines {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    background-color: transparent; }
+    @media only screen and (max-width: 768px) {
+      header .lines {
+        display: none; } }
+    header .lines div {
+      display: inline-block;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    header .lines .line-1 {
+      width: 3%;
+      left: 0;
+      background-color: #827B7B; }
+    header .lines .line-2 {
+      width: 230px;
+      left: 3%;
+      background-color: transparent; }
+    header .lines .line-3 {
+      width: calc(100% - 3% - 230px);
+      left: 24%;
+      background-color: #827B7B; }
+      @media only screen and (min-width: 769px) and (max-width: 1199px) {
+        header .lines .line-3 {
+          width: 72%;
+          left: 32%; } }
+      @media only screen and (min-width: 768px) and (max-width: 992px) {
+        header .lines .line-3 {
+          width: 67%;
+          left: 33%; } }
+      @media screen and (min-width: 1800px) and (max-width: 1900px) {
+        header .lines .line-3 {
+          width: 76%;
+          left: 24%; } }
+
+#home {
+  display: block;
+  background-image: url(img/home-bg.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
 
 /*# sourceMappingURL=styles.css.map*/
