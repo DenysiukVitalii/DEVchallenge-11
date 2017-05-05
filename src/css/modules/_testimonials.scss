@@ -1,0 +1,104 @@
+#testimonials {
+  padding-bottom: 80px;
+  h1 {
+    font-size: 50px;
+    @include media(mobile) {
+      font-size: 28px;
+    };
+    letter-spacing: 4px;
+    margin-bottom: 45px;
+  }
+  p {
+    font-size: 16px;
+    font-family: Georgia;
+    display: block;
+    color: rgb( 72, 82, 96 );
+    margin: 0 auto;
+    margin-bottom: 75px;
+    @include media(mobile) {
+      width: 100%;
+    }
+  }
+
+  .slider-testimonials {
+        position: relative;
+        width: 50vw;
+        overflow: hidden;
+        margin: 0 auto;
+        @media screen and (max-width: 768px) {
+          width: 80vw;
+        }
+      }
+
+      .slider-wrapper-t {
+        width: 9999px;
+        position: relative;
+        float: left;
+        transition: 0.5s; }
+
+      .slide-t {
+        float: left;
+        position: relative;
+       }
+
+      #slider-nav-t {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          @include media(mobile) {
+            width: 68%;
+          }
+       }
+
+       .dots {
+          display: block;
+          float: left;
+          cursor: pointer;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          margin: 0 10px;
+          background-color: #000;
+        }
+        .slide-content {
+          width: 50vw;
+          @media screen and (max-width: 768px) {
+            width: 80vw;
+          }
+          text-align: center;
+          margin-bottom: 30px;
+          p {
+            line-height: 2.5;
+          }
+          h4 {
+            font-size: 17px;
+            letter-spacing: 2px;
+          }
+          .person-img {
+            position: relative;
+            margin: 0 auto;
+            width: 170px;
+            height: 170px;
+            img {
+              width: 100%;
+              border-radius: 50%;
+            }
+            .social-icon {
+              position: absolute;
+              right: -5%;
+              top: 13%;
+              width: 40px;
+              height: 40px;
+              background-color: $facebook;
+              border-radius: 50%;
+              img {
+                display: block;
+                border-radius: 0;
+                @include center();
+                width: 12px;
+              }
+            }
+          }
+        }
+}

@@ -1,6 +1,9 @@
 .active-tab {
     @include border(bb, 4px, #000);
 }
+.active-dot{
+  background-color: $gold !important;
+}
 .show {
   display: block !important;
 }
