@@ -1,4 +1,4 @@
-#program {
+#programs {
   padding: 30px 0;
   position: relative;
   .granola {
@@ -12,12 +12,28 @@
     background-position: center center;
     background-size: cover;
     @include media(mobile) {
-      width: 118px;
-      height: 123px;
+      display: none;
+    };
+  }
+  .cup-coffee {
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    width: 600px;
+    height: 657px;
+    z-index: 10;
+    background-image: url(../img/coffee-cup.png);
+    background-position: center center;
+    background-size: cover;
+    @include media(mobile) {
+      display: none;
     };
   }
   h1 {
     font-size: 50px;
+    @include media(mobile) {
+      font-size: 28px;
+    };
     letter-spacing: 4px;
     margin-bottom: 45px;
     &:before {
@@ -66,31 +82,40 @@
           padding: 35px 80px;
           font-size: 21px;
         }
-        &:first-child a{
-          @include border(bb, 4px, #000);
-        }
       }
     }
 
     .tab {
       margin-top: 100px;
       position: relative;
+      display: none;
+      img {
+        width: 100%;
+      }
       .bg-tab {
         font-family: RobotoBold;
         text-transform: uppercase;
         position: absolute;
         left: 44%;
-        top: -16%;
+        top: -7%;
         font-size: 190px;
         color: #ddd;
+        @media screen and (max-width: 768px) {
+          display: none !important;
+        }
       }
       h3 {
         font-family: Georgia;
         font-size: 26px;
-        margin-bottom: 45px;
+        margin-bottom: 17%;
       }
       span, h2 {
         font-family: Georgia;
+      }
+      h4 {
+        margin: 0;
+        font-size: 20px;
+        text-transform: uppercase;
       }
       .conditionals {
         div {
@@ -126,15 +151,67 @@
         padding: 15px 50px;
       }
       .offers {
-        h4 {
+        .title-offer {
+          position: relative;
+          @include border(bt, 1px, #939393);
+          height: 90px;
+          margin-bottom: 40px;
+        }
+
+        span {
+          position: absolute;
+          bottom: 0;
+        }
+        p {
+          text-align: left;
+        }
+        .offer-list {
           margin: 0;
-          height: 80px;
-          @include border(bt, 1px, #ddd);
-          line-height: 2.5;
+          padding: 0;
+          li {
+            list-style-image: url(../img/icons/minus.png);
+            margin-left: 16px;
+            font-family: Georgia;
+            font-size: 15px;
+            color: rgb( 72, 82, 96 );
+            margin-bottom: 20px;
+          }
         }
       }
       .description {
         margin-bottom: 30px;
+      }
+      .includes {
+        margin-top: 50px;
+      }
+      .addition {
+        padding: 0;
+        li {
+          img {
+            width: 12px;
+            height: 12px;
+            margin-left: 7px;
+          }
+          @include border(bt, 1px, #939393);
+          @include border(bl, 1px, #939393);
+          @include border(br, 1px, #939393);
+          div {
+            display: inline-block;
+          }
+          .toggle {
+            @include border(br, 1px, #939393);
+            display: inline-block;
+            width: 35px;
+            padding: 5px;
+          }
+          .desc {
+            color: rgb( 72, 82, 96 );
+            padding-left: 10px;
+          }
+          &:last-child {
+            @include border(bb, 1px, #939393);
+          }
+        }
       }
     }
   }

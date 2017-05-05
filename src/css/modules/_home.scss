@@ -7,6 +7,10 @@
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  .container {
+    height: 100vh;
+    position: relative;
+  }
   .welcome {
     width: 100%;
     color: #fff;
@@ -63,9 +67,11 @@
       }
       @include media(mobile) {
         margin: 10px 0px;
+        font-size: 28px;
       };
     }
     p {
+      width: 100%;
         font-family: Georgia;
         margin: 0;
         @include media(mobile) {

@@ -798,6 +798,9 @@ header {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
+  #home .container {
+    height: 100vh;
+    position: relative; }
   #home .welcome {
     width: 100%;
     color: #fff;
@@ -856,8 +859,10 @@ header {
         color: #EAB96A; }
       @media only screen and (max-width: 768px) {
         #home .welcome h1 {
-          margin: 10px 0px; } }
+          margin: 10px 0px;
+          font-size: 28px; } }
     #home .welcome p {
+      width: 100%;
       font-family: Georgia;
       margin: 0; }
       @media only screen and (max-width: 768px) {
@@ -915,10 +920,10 @@ header {
     background-position: center center;
     background-size: cover; }
 
-#program {
+#programs {
   padding: 30px 0;
   position: relative; }
-  #program .granola {
+  #programs .granola {
     position: absolute;
     top: 13%;
     left: -3%;
@@ -929,14 +934,29 @@ header {
     background-position: center center;
     background-size: cover; }
     @media only screen and (max-width: 768px) {
-      #program .granola {
-        width: 118px;
-        height: 123px; } }
-  #program h1 {
+      #programs .granola {
+        display: none; } }
+  #programs .cup-coffee {
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    width: 600px;
+    height: 657px;
+    z-index: 10;
+    background-image: url(img/coffee-cup.png);
+    background-position: center center;
+    background-size: cover; }
+    @media only screen and (max-width: 768px) {
+      #programs .cup-coffee {
+        display: none; } }
+  #programs h1 {
     font-size: 50px;
     letter-spacing: 4px;
     margin-bottom: 45px; }
-    #program h1:before {
+    @media only screen and (max-width: 768px) {
+      #programs h1 {
+        font-size: 28px; } }
+    #programs h1:before {
       display: inline-block;
       content: '';
       width: 15px;
@@ -949,7 +969,7 @@ header {
       background-image: url(img/star-black.png);
       background-position: center center;
       background-size: cover; }
-    #program h1:after {
+    #programs h1:after {
       display: inline-block;
       content: '';
       width: 15px;
@@ -962,79 +982,132 @@ header {
       background-image: url(img/star-black.png);
       background-position: center center;
       background-size: cover; }
-  #program p {
+  #programs p {
     font-size: 16px;
     font-family: Georgia;
     color: #485260; }
-  #program .programs .menu-tabs {
+  #programs .programs .menu-tabs {
     width: 100%;
     margin: 0;
     padding: 0;
     text-align: center;
     border-bottom: 1px solid #ddd; }
-    #program .programs .menu-tabs li {
+    #programs .programs .menu-tabs li {
       display: inline-block;
       -webkit-transform: translate(0, 2px);
       -moz-transform: translate(0, 2px);
       -ms-transform: translate(0, 2px);
       transform: translate(0, 2px); }
-      #program .programs .menu-tabs li a {
+      #programs .programs .menu-tabs li a {
         color: #000;
         display: block;
         padding: 35px 80px;
         font-size: 21px; }
-      #program .programs .menu-tabs li:first-child a {
-        border-bottom: 4px solid #000; }
-  #program .programs .tab {
+  #programs .programs .tab {
     margin-top: 100px;
-    position: relative; }
-    #program .programs .tab .bg-tab {
+    position: relative;
+    display: none; }
+    #programs .programs .tab img {
+      width: 100%; }
+    #programs .programs .tab .bg-tab {
       font-family: RobotoBold;
       text-transform: uppercase;
       position: absolute;
       left: 44%;
-      top: -16%;
+      top: -7%;
       font-size: 190px;
       color: #ddd; }
-    #program .programs .tab h3 {
+      @media screen and (max-width: 768px) {
+        #programs .programs .tab .bg-tab {
+          display: none !important; } }
+    #programs .programs .tab h3 {
       font-family: Georgia;
       font-size: 26px;
-      margin-bottom: 45px; }
-    #program .programs .tab span, #program .programs .tab h2 {
+      margin-bottom: 17%; }
+    #programs .programs .tab span, #programs .programs .tab h2 {
       font-family: Georgia; }
-    #program .programs .tab .conditionals div {
+    #programs .programs .tab h4 {
+      margin: 0;
+      font-size: 20px;
+      text-transform: uppercase; }
+    #programs .programs .tab .conditionals div {
       margin-bottom: 20px; }
-      #program .programs .tab .conditionals div img {
+      #programs .programs .tab .conditionals div img {
         width: 30px;
         height: 30px;
         display: inline-block; }
-      #program .programs .tab .conditionals div span {
+      #programs .programs .tab .conditionals div span {
         display: inline-block;
         -webkit-transform: translate(0, -50%);
         -moz-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
         transform: translate(0, -50%);
         margin-left: 15px; }
-    #program .programs .tab .conditionals .price {
+    #programs .programs .tab .conditionals .price {
       font-family: Georgia;
       font-size: 30px;
       font-weight: bold; }
-      #program .programs .tab .conditionals .price h2, #program .programs .tab .conditionals .price span {
+      #programs .programs .tab .conditionals .price h2, #programs .programs .tab .conditionals .price span {
         display: inline-block; }
-      #program .programs .tab .conditionals .price h2 {
+      #programs .programs .tab .conditionals .price h2 {
         font-size: 50px;
         margin-bottom: 15px;
         margin-top: 0; }
-    #program .programs .tab .btn-reg {
+    #programs .programs .tab .btn-reg {
       color: #fff;
       background-color: #000;
       padding: 15px 50px; }
-    #program .programs .tab .offers h4 {
+    #programs .programs .tab .offers .title-offer {
+      position: relative;
+      border-top: 1px solid #939393;
+      height: 90px;
+      margin-bottom: 40px; }
+    #programs .programs .tab .offers span {
+      position: absolute;
+      bottom: 0; }
+    #programs .programs .tab .offers p {
+      text-align: left; }
+    #programs .programs .tab .offers .offer-list {
       margin: 0;
-      height: 80px;
-      border-top: 1px solid #ddd;
-      line-height: 2.5; }
-    #program .programs .tab .description {
+      padding: 0; }
+      #programs .programs .tab .offers .offer-list li {
+        list-style-image: url(img/minus.png);
+        margin-left: 16px;
+        font-family: Georgia;
+        font-size: 15px;
+        color: #485260;
+        margin-bottom: 20px; }
+    #programs .programs .tab .description {
       margin-bottom: 30px; }
+    #programs .programs .tab .includes {
+      margin-top: 50px; }
+    #programs .programs .tab .addition {
+      padding: 0; }
+      #programs .programs .tab .addition li {
+        border-top: 1px solid #939393;
+        border-left: 1px solid #939393;
+        border-right: 1px solid #939393; }
+        #programs .programs .tab .addition li img {
+          width: 12px;
+          height: 12px;
+          margin-left: 7px; }
+        #programs .programs .tab .addition li div {
+          display: inline-block; }
+        #programs .programs .tab .addition li .toggle {
+          border-right: 1px solid #939393;
+          display: inline-block;
+          width: 35px;
+          padding: 5px; }
+        #programs .programs .tab .addition li .desc {
+          color: #485260;
+          padding-left: 10px; }
+        #programs .programs .tab .addition li:last-child {
+          border-bottom: 1px solid #939393; }
+
+.active-tab {
+  border-bottom: 4px solid #000; }
+
+.show {
+  display: block !important; }
 
 /*# sourceMappingURL=styles.css.map*/

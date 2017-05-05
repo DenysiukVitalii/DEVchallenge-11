@@ -1,0 +1,6 @@
+.active-tab {
+    @include border(bb, 4px, #000);
+}
+.show {
+  display: block !important;
+}
