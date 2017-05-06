@@ -1355,6 +1355,120 @@ header {
           transform: translate(-50%, -50%);
           width: 12px; }
 
+#partners {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 135px 0;
+  position: relative; }
+  #partners h1 {
+    font-size: 50px;
+    letter-spacing: 4px;
+    margin-bottom: 45px;
+    margin-top: 0; }
+    @media only screen and (max-width: 768px) {
+      #partners h1 {
+        font-size: 25px; } }
+    #partners h1:before {
+      display: inline-block;
+      content: '';
+      width: 30px;
+      height: 15px;
+      margin-right: 20px;
+      -webkit-transform: translate(0, -60%);
+      -moz-transform: translate(0, -60%);
+      -ms-transform: translate(0, -60%);
+      transform: translate(0, -60%);
+      background-image: url(img/rows-b-left.png);
+      background-position: center center;
+      background-size: cover; }
+    #partners h1:after {
+      display: inline-block;
+      content: '';
+      width: 30px;
+      height: 15px;
+      margin-left: 20px;
+      -webkit-transform: translate(0, -60%);
+      -moz-transform: translate(0, -60%);
+      -ms-transform: translate(0, -60%);
+      transform: translate(0, -60%);
+      background-image: url(img/rows-b-right.png);
+      background-position: center center;
+      background-size: cover; }
+  #partners .divider {
+    width: 218px;
+    height: 1px;
+    background-color: #000;
+    margin: 0 auto;
+    margin-bottom: 60px; }
+  #partners .slider-partners {
+    position: relative; }
+    #partners .slider-partners .slider-wrapper {
+      width: 103%;
+      -webkit-transform: translate(-3%, 0);
+      -moz-transform: translate(-3%, 0);
+      -ms-transform: translate(-3%, 0);
+      transform: translate(-3%, 0);
+      overflow-x: hidden;
+      position: relative; }
+      #partners .slider-partners .slider-wrapper #slider-clients {
+        user-select: none;
+        -webkit-user-select: none;
+        width: 9999px; }
+        #partners .slider-partners .slider-wrapper #slider-clients .slide-c {
+          display: inline-block;
+          position: relative;
+          margin: 50px 20px; }
+          @media screen and (max-width: 992px) {
+            #partners .slider-partners .slider-wrapper #slider-clients .slide-c {
+              margin: 50px 24px; } }
+          @media screen and (max-width: 768px) {
+            #partners .slider-partners .slider-wrapper #slider-clients .slide-c {
+              margin: 50px 12px; } }
+          #partners .slider-partners .slider-wrapper #slider-clients .slide-c img {
+            width: 90px; }
+          #partners .slider-partners .slider-wrapper #slider-clients .slide-c .slide-content {
+            width: 160px; }
+            @media screen and (max-width: 768px) {
+              #partners .slider-partners .slider-wrapper #slider-clients .slide-c .slide-content {
+                width: 80vw;
+                margin: 0 auto; } }
+            #partners .slider-partners .slider-wrapper #slider-clients .slide-c .slide-content img {
+              display: block;
+              margin: 0 auto; }
+    #partners .slider-partners .slider-nav {
+      width: 106%;
+      display: block;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      transform: translate(-2%, -50%);
+      top: 40%;
+      margin: 30px auto; }
+      @media only screen and (max-width: 768px) {
+        #partners .slider-partners .slider-nav {
+          width: 105%; } }
+      #partners .slider-partners .slider-nav .btn-slide {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        position: relative; }
+      #partners .slider-partners .slider-nav .btn-p-previous {
+        width: 9px;
+        height: 15px;
+        background-image: url(img/arrow-slider-left.png);
+        background-position: center center;
+        background-size: cover; }
+      #partners .slider-partners .slider-nav .btn-p-next {
+        float: right;
+        width: 9px;
+        height: 15px;
+        background-image: url(img/arrow-slider-right.png);
+        background-position: center center;
+        background-size: cover; }
+
 .active-tab {
   border-bottom: 4px solid #000; }
 
