@@ -1,6 +1,6 @@
 #contact-us {
   position: relative;
-  height: 800px;
+  height: 700px;
   padding: 120px 0;
   .granols {
     position: absolute;
@@ -8,7 +8,7 @@
     left: -3%;
     width: 650px;
     height: 686px;
-    z-index: 100;
+    z-index: 10;
     background-image: url(../img/granols/granols.png);
     background-position: center center;
     background-size: cover;
@@ -46,7 +46,7 @@
   .granola-bottom {
     position: absolute;
     right: -8%;
-    bottom: 12%;
+    bottom: 0;
     width: 330px;
     height: 328px;
     z-index: 5;
@@ -159,7 +159,8 @@
   }
   .contact-us-bottom {
     position: absolute;
-    bottom: 0;
+    z-index: 1000;
+    bottom: -20%;
     left: 0;
     width: 100%;
     height: 140px;

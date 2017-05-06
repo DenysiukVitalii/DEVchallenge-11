@@ -149,6 +149,13 @@
         color: #fff;
         background-color: #000;
         padding: 15px 50px;
+        transition: .3s;
+        @include border(b, 1px, transparent);
+        &:hover {
+          color: #000;
+          background-color: transparent;
+          @include border(b, 1px, #000);
+        }
       }
       .offers {
         .title-offer {
