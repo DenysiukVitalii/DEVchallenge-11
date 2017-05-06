@@ -282,8 +282,8 @@ var width = window.innerWidth;
 })();
 
 (function () {
-  var sliderWrapper = document.getElementById('slider-clients');
-  var slides = document.querySelectorAll('#slider-clients .slide-c');
+  var sliderWrapper = document.getElementById('slider-partners');
+  var slides = document.querySelectorAll('#slider-partners .slide-c');
   var prevBtn = document.querySelector('.btn-p-previous');
   var nextBtn = document.querySelector('.btn-p-next');
   var scrolled;
