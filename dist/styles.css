@@ -877,12 +877,16 @@ header {
       height: 6px;
       margin-bottom: 60px; }
     #home .welcome .btn-down {
+      display: block;
       position: relative;
       width: 60px;
       height: 60px;
       border: 1px solid #fff;
       border-radius: 50%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      transition: 0.3s; }
+      #home .welcome .btn-down:hover {
+        background-color: #fff; }
       #home .welcome .btn-down .arrow-down {
         position: absolute;
         top: 50%;
@@ -1817,10 +1821,11 @@ footer {
   background-color: #000;
   border-bottom: 1px solid #827B7B; }
 
-.logo-up {
-  transition: 0.5s;
-  transform: translateY(-114%) !important;
-  width: 160px !important;
-  height: 75px; }
+@media only screen and (min-width: 768px) {
+  .logo-up {
+    transition: 0.5s;
+    transform: translateY(-114%) !important;
+    width: 160px !important;
+    height: 75px; } }
 
 /*# sourceMappingURL=styles.css.map*/
