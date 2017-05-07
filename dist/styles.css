@@ -614,7 +614,7 @@ header {
   background-color: transparent;
   transition: 0.5s;
   width: 100%;
-  z-index: 100; }
+  z-index: 99999; }
   @media only screen and (max-width: 768px) {
     header {
       height: 100px;
@@ -669,7 +669,8 @@ header {
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     top: 100%;
-    left: 5%; }
+    left: 5%;
+    transition: 0.5s; }
     @media only screen and (max-width: 768px) {
       header #logo {
         top: 50%;
@@ -709,9 +710,6 @@ header {
           margin: 0 5px;
           display: inline-block;
           float: left; }
-          header #menu-list li:first-child a {
-            border-bottom: 4px solid #EAB96A;
-            color: #EAB96A; }
           header #menu-list li:after {
             content: '';
             display: block;
@@ -1030,7 +1028,8 @@ header {
     #programs .programs .tab h4 {
       margin: 0;
       font-size: 20px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-align: left; }
     #programs .programs .tab .conditionals div {
       margin-bottom: 20px; }
       #programs .programs .tab .conditionals div img {
@@ -1810,5 +1809,18 @@ footer {
 
 .show {
   display: block !important; }
+
+.hide {
+  display: none !important; }
+
+.black {
+  background-color: #000;
+  border-bottom: 1px solid #827B7B; }
+
+.logo-up {
+  transition: 0.5s;
+  transform: translateY(-114%) !important;
+  width: 160px !important;
+  height: 75px; }
 
 /*# sourceMappingURL=styles.css.map*/

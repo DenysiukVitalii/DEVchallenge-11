@@ -4,7 +4,7 @@ header {
     background-color: transparent;
     transition: 0.5s;
     width: 100%;
-    z-index: 100;
+    z-index: 99999;
     @include media(mobile) {
       height: 100px;
       @include border(bb, 1px, #827B7B);
@@ -52,6 +52,7 @@ header {
      @include centerVertical();
      top: 100%;
      left: 5%;
+     transition: 0.5s;
      @include media(mobile) {
         top: 50%;
         width: 115px;
@@ -87,12 +88,7 @@ header {
          margin: 0 5px;
          display: inline-block;
          float: left;
-         &:first-child {
-           a {
-             @include border(bb, 4px, $gold);
-             color: $gold;
-           }
-         }
+
          &:after {
            content: '';
            @include centerVertical();

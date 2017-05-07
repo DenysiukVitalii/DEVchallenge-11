@@ -7,3 +7,16 @@
 .show {
   display: block !important;
 }
+.hide {
+  display: none !important;
+}
+.black {
+  background-color: #000;
+  @include border(bb, 1px, #827B7B);
+}
+.logo-up {
+  transition: 0.5s;
+  transform: translateY(-114%) !important;
+  width: 160px !important;
+  height: 75px;
+}
