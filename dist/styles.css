@@ -1704,10 +1704,13 @@ footer {
     footer .footer-table .footer-menu {
       border-bottom: 1px solid #fff; }
       footer .footer-table .footer-menu #footer-menu {
-        width: 47%;
+        width: 535px;
         height: 100px;
         margin: 0 auto;
         padding: 0; }
+        @media only screen and (min-width: 768px) and (max-width: 992px) {
+          footer .footer-table .footer-menu #footer-menu {
+            width: 455px; } }
         @media only screen and (max-width: 768px) {
           footer .footer-table .footer-menu #footer-menu {
             width: 100%;

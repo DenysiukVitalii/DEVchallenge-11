@@ -74,10 +74,13 @@ footer {
     .footer-menu {
       @include border(bb, 1px, #fff);
       #footer-menu {
-        width: 47%;
+        width: 535px;
         height: 100px;
          margin: 0 auto;
          padding: 0;
+         @include media(mobmed) {
+           width: 455px;
+         }
          @include media(mobile) {
            width: 100%;
             text-align: center;
